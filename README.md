@@ -5,18 +5,18 @@ Simply Go lang library to get the content from a pad (etherpad) and put into IPF
 
 Needs to have installed IPFS (https://ipfs.io), and the daemon running ('> ipfs daemon').
 
-### Install
+## Install
 ```
 go get github.com/arnaucode/pad2ipfs
 ```
 
-### Usage
+## Usage
 
 The added pads are stored in 'addedPads' directory.
 The getted pads are stored in 'gettedPads' directory.
 
 
-##### - Add
+#### - Add
 Adds the content from a pad to IPFS
 
 ```go
@@ -37,7 +37,7 @@ Supported formats:
 
 
 
-##### - Get
+#### - Get
 Gets the content from IPFS and stores it into a file
 
 ```go
@@ -49,3 +49,10 @@ if err!=nil {
   fmt.Println(err)
 }
 ```
+
+
+
+### CLI
+In the directory /pad2ipfs-cli is placed the cli to interact directly with the library from the command line. Here is a screenshot:
+
+![pad2ipfs-cli-screenshot](https://raw.githubusercontent.com/arnaucode/pad2ipfs/master/pad2ipfs-cli-screenshot.png "pad2ipfs-cli-screenshot")
